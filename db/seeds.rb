@@ -8,9 +8,24 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 # ダミーデータを作るためのファイル
+jon = User.find_or_create_by!(email: 'john@example.com') do |user|
+  user.password = 'password'
+end
 
-10.times do
-    Article.create(
+emily = User.find_or_create_by!(email: 'emily@example.com') do |user|
+  user.password = 'password'
+end
+
+
+5.times do
+    jon.articles.create(
+      title: Faker::Lorem.sentence(word_count: 5),
+      content: Faker::Lorem.sentence(word_count: 100)
+    )
+end
+
+5.times do
+    emily.articles.create(
       title: Faker::Lorem.sentence(word_count: 5),
       content: Faker::Lorem.sentence(word_count: 100)
     )
