@@ -12,7 +12,8 @@ module Blogapp
     config.load_defaults 8.0
 
        # ✅ ここから追加（Dotenvの読み込み設定）
-    if ['development', 'test'].include? ENV['RAILS_ENV']
+    if Rails.env.development? || Rails.env.test?
+      Bundler.require(*Rails.groups)
       Dotenv::Rails.load
     end
 
