@@ -1,0 +1,28 @@
+current directory: /Users/aoyamashigeki/blogapp/vendor/bundle/ruby/3.3.0/gems/hamlit-3.0.3/ext/hamlit
+/Users/aoyamashigeki/.rbenv/versions/3.3.2/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/aoyamashigeki/blogapp/vendor/bundle/ruby/3.3.0/gems/hamlit-3.0.3/ext/hamlit
+make DESTDIR\= sitearchdir\=./.gem.20251026-39894-nfo3yo sitelibdir\=./.gem.20251026-39894-nfo3yo clean
+
+current directory: /Users/aoyamashigeki/blogapp/vendor/bundle/ruby/3.3.0/gems/hamlit-3.0.3/ext/hamlit
+make DESTDIR\= sitearchdir\=./.gem.20251026-39894-nfo3yo sitelibdir\=./.gem.20251026-39894-nfo3yo
+compiling hamlit.c
+In file included from hamlit.c:2:
+In file included from /Users/aoyamashigeki/.rbenv/versions/3.3.2/include/ruby-3.3.0/ruby/encoding.h:22:
+/Users/aoyamashigeki/.rbenv/versions/3.3.2/include/ruby-3.3.0/ruby/internal/encoding/ctype.h:82:46: warning: unused parameter 'enc' [-Wunused-parameter]
+   82 | rb_enc_isascii(OnigCodePoint c, rb_encoding *enc)
+      |                                              ^
+hamlit.c:61:10: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'unsigned int' [-Wshorten-64-to-32]
+   61 |   size = hesc_escape_html(&buf, RSTRING_PTR(str), RSTRING_LEN(str));
+      |        ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+compiling hescape.c
+linking shared-object hamlit/hamlit.bundle
+
+current directory: /Users/aoyamashigeki/blogapp/vendor/bundle/ruby/3.3.0/gems/hamlit-3.0.3/ext/hamlit
+make DESTDIR\= sitearchdir\=./.gem.20251026-39894-nfo3yo sitelibdir\=./.gem.20251026-39894-nfo3yo install
+/usr/bin/install -c -m 0755 hamlit.bundle ./.gem.20251026-39894-nfo3yo/hamlit
+
+current directory: /Users/aoyamashigeki/blogapp/vendor/bundle/ruby/3.3.0/gems/hamlit-3.0.3/ext/hamlit
+make DESTDIR\= sitearchdir\=./.gem.20251026-39894-nfo3yo sitelibdir\=./.gem.20251026-39894-nfo3yo clean

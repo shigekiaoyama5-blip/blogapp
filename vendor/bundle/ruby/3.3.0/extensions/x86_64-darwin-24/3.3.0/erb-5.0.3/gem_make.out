@@ -1,0 +1,19 @@
+current directory: /Users/aoyamashigeki/blogapp/vendor/bundle/ruby/3.3.0/gems/erb-5.0.3/ext/erb/escape
+/Users/aoyamashigeki/.rbenv/versions/3.3.2/bin/ruby extconf.rb
+checking for rb_ext_ractor_safe() in ruby.h... yes
+creating Makefile
+
+current directory: /Users/aoyamashigeki/blogapp/vendor/bundle/ruby/3.3.0/gems/erb-5.0.3/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20251026-39894-wergkm sitelibdir\=./.gem.20251026-39894-wergkm clean
+
+current directory: /Users/aoyamashigeki/blogapp/vendor/bundle/ruby/3.3.0/gems/erb-5.0.3/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20251026-39894-wergkm sitelibdir\=./.gem.20251026-39894-wergkm
+compiling escape.c
+linking shared-object erb/escape.bundle
+
+current directory: /Users/aoyamashigeki/blogapp/vendor/bundle/ruby/3.3.0/gems/erb-5.0.3/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20251026-39894-wergkm sitelibdir\=./.gem.20251026-39894-wergkm install
+/usr/bin/install -c -m 0755 escape.bundle ./.gem.20251026-39894-wergkm/erb
+
+current directory: /Users/aoyamashigeki/blogapp/vendor/bundle/ruby/3.3.0/gems/erb-5.0.3/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20251026-39894-wergkm sitelibdir\=./.gem.20251026-39894-wergkm clean
