@@ -6,8 +6,8 @@ gem "rails", "~> 8.0.3"
 gem "importmap-rails"
 # The modern asset pipeline for Rails [https://github.com/rails/propshaft]
 gem "propshaft"
-# Use sqlite3 as the database for Active Record
-gem "sqlite3", ">= 2.1"
+
+gem 'pg', '>= 0.18', '<2.0'
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", ">= 5.0"
 # Bundle and transpile JavaScript [https://github.com/rails/jsbundling-rails]
@@ -27,6 +27,8 @@ gem "annotate"
 gem "rubocop-rails"
 gem "better_errors"
 gem "binding_of_caller"
+gem 'aws-sdk-s3', require: false
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ windows jruby ]
 
@@ -52,6 +54,7 @@ group :development, :test do
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
   gem "pry-byebug"
   gem "erb2haml"
+  gem 'dotenv-rails'
 
   # Static analysis for security vulnerabilities [https://brakemanscanner.org/]
   gem "brakeman", require: false
