@@ -13,7 +13,6 @@ module Blogapp
 
        # ✅ ここから追加（Dotenvの読み込み設定）
     if Rails.env.development? || Rails.env.test?
-      Bundler.require(*Rails.groups)
       Dotenv::Rails.load
     end
 
